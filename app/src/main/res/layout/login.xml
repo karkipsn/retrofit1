@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:paddingTop="50dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"/>
+
+
+        <EditText
+            android:id="@+id/tv_password"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:inputType="textPassword"
+            android:textSize="20sp"/>
+
+
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Login"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_getuser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="GetUser"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_postuser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="PostUser"
+            android:textColor="@android:color/white" />
+        <Button
+        android:id="@+id/btn_postform"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Post FormUrlEncoded"
+        android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_multiresource"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Get Multiple Resources"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_put"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Put User"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_patch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Patch"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout">
+
+        <TextView
+            android:id="@+id/information"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/img_view"
+            android:layout_gravity = "center_horizontal"/>
+            <!--android:layout_below="@+id/information" -->
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
